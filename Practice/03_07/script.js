@@ -7,3 +7,18 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+const screen = {
+    name : "Apple",
+    color: "black",
+    owner: {
+        name: "Teemo",
+        charactor: "Funny",
+        dick: {
+            size: "big",
+            length: 18
+        }
+
+    }
+}
+
+console.log(screen.owner.dick['length'])
