@@ -23,4 +23,12 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
-};
+  updateProperty: function (property, value){
+    this[property] = value;
+    
+  }
+}
+console.log (backpack.volume)
+
+backpack.updateProperty("volume","10")
+console.log (backpack.volume)
